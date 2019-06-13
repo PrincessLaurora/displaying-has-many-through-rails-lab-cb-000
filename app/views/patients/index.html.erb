@@ -6,7 +6,7 @@
   <li><%=link_to patient.name, patient_path(patient)%>
 
 
-<%=pluralize(patient.appointments.count, 'appointment')%></li>
+<h2>Number of Appointments: <%=patient.appointments.count%></li></h2>
 
 <%end%>
 </ul>
