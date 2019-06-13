@@ -2,6 +2,6 @@
 <%=link_to @patient.doctor.name, doctor_path(@patient.doctor)%>
 
 <%@patient.appointments.each do |appo|%>
- <%=link_to appo.appointment_datetime.strftime("%B %-d, %Y at %k:%M"), appointment_path(appo)%>
+ <%appo.appointment_datetime.strftime("%B %-d, %Y at %k:%M")%>
 
  <%end%>
